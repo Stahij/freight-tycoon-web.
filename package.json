@@ -1,0 +1,13 @@
+{
+  "name": "freight-tycoon-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Browser-first responsive prototype for Freight Tycoon",
+  "scripts": {
+    "check": "node --check src/game.js && node --check src/app.js && node --check sw.js",
+    "build": "node scripts/build-check.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" }
+}
