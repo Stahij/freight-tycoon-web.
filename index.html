@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111a2b">
+  <meta name="description" content="Freight Tycoon — браузерный прототип логистической экономической стратегии.">
+  <title>Freight Tycoon — Управление компанией</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home" aria-label="Freight Tycoon, главная"><span class="brand-mark">F<span>T</span></span><span><b>FREIGHT</b><small>TYCOON</small></span></a>
+      <div class="company-mini"><div class="company-avatar">NF</div><div><b id="company-name">Northern Freight</b><small>Частная компания</small></div><span class="online-dot"></span></div>
+      <p class="nav-label">УПРАВЛЕНИЕ</p>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <button class="nav-item active" data-tab="overview"><span class="nav-icon">⌂</span><span>Обзор</span></button>
+        <button class="nav-item" data-tab="contracts"><span class="nav-icon">⇄</span><span>Контракты</span><span class="nav-count">5</span></button>
+        <button class="nav-item" data-tab="fleet"><span class="nav-icon">▰</span><span>Автопарк</span></button>
+        <button class="nav-item" data-tab="finance"><span class="nav-icon">₸</span><span>Финансы</span></button>
+      </nav>
+      <div class="sidebar-bottom"><div class="season-card"><span>✦</span><div><b>План на сегодня</b><small>Найдите выгодный заказ и держите расходы под контролем.</small></div></div><button class="nav-item" id="save-game"><span class="nav-icon">▣</span><span>Сохранить игру</span></button><button class="nav-item reset-button" id="reset-game"><span class="nav-icon">↻</span><span>Новая игра</span></button><div class="sidebar-version">WEB PROTOTYPE · v0.1.0</div></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button id="mobile-menu" class="mobile-menu" aria-label="Открыть меню">☰</button><div class="breadcrumb"><span>Компания</span><span class="crumb-sep">/</span><b id="day-label">ДЕНЬ 1</b></div><div class="topbar-right"><div class="cash-chip"><span class="cash-dot"></span><span id="cash-label">10 000 ₸</span></div><button class="advance-button" id="advance-day">⏵ Следующий день</button></div></header>
+      <div class="notice" id="notice" role="status" aria-live="polite"></div>
+      <div class="main-content" id="main-view"></div>
+      <footer class="footer"><span>FREIGHT TYCOON <span class="footer-dot">•</span> РАННИЙ ПРОТОТИП</span><span>Экономика и баланс могут измениться</span></footer>
+    </main>
+  </div>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
