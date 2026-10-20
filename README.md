@@ -26,3 +26,9 @@ This is a playable technical prototype, not the complete game from the original 
 - `docs/technical-audit.md`: risks identified in the original specification.
 
 GitHub Actions workflows check JavaScript syntax and run tests. A separate workflow is prepared to publish the site through GitHub Pages.
+
+
+## Online playtest
+After the GitHub Pages workflow completes successfully, open: https://stahij.github.io/freight-tycoon-web./
+
+On Android, open the link in Chrome. The prototype stores the current save in that browser on that device.
